@@ -1,0 +1,18 @@
+{
+  "name": "dual-pool-amm-coursework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AMM DEX, ERC721 liquidity positions and atomic arbitrage coursework",
+  "scripts": {
+    "setup": "npm ci --prefix contracts && npm ci --prefix web",
+    "node": "npm run node --prefix contracts",
+    "deploy": "npm run deploy --prefix contracts",
+    "simulate": "npm run simulate --prefix contracts",
+    "dev": "npm run dev --prefix web",
+    "test": "npm run typecheck --prefix contracts && npm test --prefix contracts && npm run build --prefix web",
+    "test:e2e": "npm run test:e2e --prefix web",
+    "verify": "npm run verify --prefix contracts",
+    "deploy:sepolia": "npm run deploy:sepolia --prefix contracts"
+  },
+  "engines": { "node": ">=24" }
+}

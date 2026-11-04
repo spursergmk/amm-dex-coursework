@@ -1,0 +1,89 @@
+
+> dual-pool-amm-coursework@1.0.0 simulate
+> npm run simulate --prefix contracts
+
+
+> minidex-contracts@0.1.0 simulate
+> hardhat run scripts/simulate.ts --network localhost
+
+
+user 1/20 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266: swap + add + remove
+user 2/20 0x70997970C51812dc3A010C7d01b50e0d17dc79C8: swap + add
+user 3/20 0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC: swap + add + remove
+user 4/20 0x90F79bf6EB2c4f870365E785982E1f101E93b906: swap + add
+user 5/20 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65: swap + add + remove
+user 6/20 0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc: swap + add
+user 7/20 0x976EA74026E726554dB657fA54763abd0C3a0aa9: swap + add + remove
+user 8/20 0x14dC79964da2C08b23698B3D3cc7Ca32193d9955: swap + add
+user 9/20 0x23618e81E3f5cdF7f54C3d65f7FBc0aBf5B21E8f: swap + add + remove
+user 10/20 0xa0Ee7A142d267C1f36714E4a8F75612F20a79720: swap + add
+user 11/20 0xBcd4042DE499D14e55001CcbB24a551F3b954096: swap + add + remove
+user 12/20 0x71bE63f3384f5fb98995898A86B02Fb2426c5788: swap + add
+user 13/20 0xFABB0ac9d68B0B445fB7357272Ff202C5651694a: swap + add + remove
+user 14/20 0x1CBd3b2770909D4e10f157cABC84C7264073C9Ec: swap + add
+user 15/20 0xdF3e18d64BC6A983f673Ab319CCaE4f1a57C7097: swap + add + remove
+user 16/20 0xcd3B766CCDd6AE721141F452C550Ca635964ce71: swap + add
+user 17/20 0x2546BcD3c84621e976D8185a91A922aE77ECEc30: swap + add + remove
+user 18/20 0xbDA5747bFD65F08deb54cb465eB87D40e51B197E: swap + add
+user 19/20 0xdD2FD4581271e230360230F9337D5c0430Bf44C0: swap + add + remove
+user 20/20 0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199: swap + add
+100 additional random operations completed across 50 minutes of advanced local-chain time.
+{
+  "users": 20,
+  "actions": {
+    "swaps": 74,
+    "adds": 55,
+    "removes": 21
+  },
+  "profit": "5.725636361839480863",
+  "token": "TKA",
+  "rollback": {
+    "hash": "0xe9cbcb9fdefbaaf749679c65640a9c2168a163018e2287a48f46acf32549b99a",
+    "status": 0,
+    "eventCount": 0,
+    "gasUsed": "217620",
+    "reason": "transaction execution reverted",
+    "poolsUnchanged": true,
+    "tokenBalanceUnchanged": true,
+    "before": [
+      {
+        "dex": "River DEX",
+        "reserveA": "2704.692888877062343997",
+        "reserveB": "2141.57651609005818745",
+        "rawA": "2704692888877062343997",
+        "rawB": "2141576516090058187450",
+        "shares": "2405290079898712479618",
+        "priceBperA": 0.7918002538836122
+      },
+      {
+        "dex": "Hill DEX",
+        "reserveA": "2594.801759330975495617",
+        "reserveB": "2087.790062057924857459",
+        "rawA": "2594801759330975495617",
+        "rawB": "2087790062057924857459",
+        "shares": "2325829978279329382810",
+        "priceBperA": 0.8046048429519429
+      }
+    ],
+    "after": [
+      {
+        "dex": "River DEX",
+        "reserveA": "2704.692888877062343997",
+        "reserveB": "2141.57651609005818745",
+        "rawA": "2704692888877062343997",
+        "rawB": "2141576516090058187450",
+        "shares": "2405290079898712479618",
+        "priceBperA": 0.7918002538836122
+      },
+      {
+        "dex": "Hill DEX",
+        "reserveA": "2594.801759330975495617",
+        "reserveB": "2087.790062057924857459",
+        "rawA": "2594801759330975495617",
+        "rawB": "2087790062057924857459",
+        "shares": "2325829978279329382810",
+        "priceBperA": 0.8046048429519429
+      }
+    ]
+  }
+}

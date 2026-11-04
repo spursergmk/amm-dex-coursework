@@ -1,0 +1,12 @@
+node_modules/
+contracts/artifacts/
+contracts/cache/
+contracts/typechain-types/
+web/dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+*.zip
+SHA256SUMS.txt

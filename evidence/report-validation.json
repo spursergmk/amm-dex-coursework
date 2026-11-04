@@ -1,0 +1,35 @@
+{
+  "pages": 6,
+  "checks": [
+    {
+      "page": 1,
+      "textCharacters": 693,
+      "images": 0
+    },
+    {
+      "page": 2,
+      "textCharacters": 788,
+      "images": 0
+    },
+    {
+      "page": 3,
+      "textCharacters": 819,
+      "images": 0
+    },
+    {
+      "page": 4,
+      "textCharacters": 88,
+      "images": 1
+    },
+    {
+      "page": 5,
+      "textCharacters": 104,
+      "images": 1
+    },
+    {
+      "page": 6,
+      "textCharacters": 876,
+      "images": 0
+    }
+  ]
+}

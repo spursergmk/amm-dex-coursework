@@ -1,0 +1,25 @@
+
+> dual-pool-amm-coursework@1.0.0 test:e2e
+> npm run test:e2e --prefix web
+
+
+> amm-dex-web@1.0.0 test:e2e
+> node tests/browser.mjs
+
+{
+  "passed": 10,
+  "checks": [
+    "连接真实本地账户并读取链上余额",
+    "网页水龙头实际领取10000 TKA",
+    "网页报价、授权与兑换上链",
+    "网页添加流动性并铸造NFT",
+    "网页转让NFT，链上所有权变更",
+    "新持有人在网页销毁NFT并获得资产",
+    "网页创建新代币对并向空池注入首笔流动性",
+    "网页扫描价差并真实执行原子套利",
+    "展示20账户模拟、储备变化、套利收据和失败回滚",
+    "390px移动端无页面横向溢出"
+  ],
+  "transactions": 10,
+  "pageErrors": []
+}

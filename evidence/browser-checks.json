@@ -1,0 +1,108 @@
+{
+  "passed": 10,
+  "checks": [
+    "连接真实本地账户并读取链上余额",
+    "网页水龙头实际领取10000 TKA",
+    "网页报价、授权与兑换上链",
+    "网页添加流动性并铸造NFT",
+    "网页转让NFT，链上所有权变更",
+    "新持有人在网页销毁NFT并获得资产",
+    "网页创建新代币对并向空池注入首笔流动性",
+    "网页扫描价差并真实执行原子套利",
+    "展示20账户模拟、储备变化、套利收据和失败回滚",
+    "390px移动端无页面横向溢出"
+  ],
+  "pageErrors": [],
+  "network": "Local Hardhat",
+  "chainId": 31337,
+  "setup": [
+    {
+      "action": "deploy browser test ERC20 C",
+      "hash": "0x2d60abd4db0dc0fcc2475c577d29796fe25dfbbb7a4ab2fb32d126465ed86349",
+      "address": "0xCf69D3f1B5b7824ABB377BA1f0421B325Ff8b471"
+    },
+    {
+      "action": "faucet C for browser user",
+      "hash": "0x062aa675624f7f0fcbb792c831e675cf4fb4b7cccd32aedd90f56208df7fe202"
+    },
+    {
+      "action": "approve price-impact trade",
+      "hash": "0x66abebce572900a8750a92852729e14069ff61ff7535d62a6c1eef8433181bbf"
+    },
+    {
+      "action": "price-impact trade for browser arbitrage",
+      "hash": "0x3ce8360cec9df3ef39d27d90ce1e3479c4f03787fc2932f5e4c7c9e96a585335",
+      "amountIn": "300 TKA"
+    }
+  ],
+  "transactions": [
+    {
+      "hash": "0xd6873fbbeff6faa90230de29360226b46eb25502f3583699781f6c91ed12d334",
+      "block": 302,
+      "status": 1,
+      "gasUsed": "222048"
+    },
+    {
+      "hash": "0xc7e09ce614de925f370f16ab9009f65b436a332506aa7642b6421f812e104388",
+      "block": 301,
+      "status": 1,
+      "gasUsed": "45981"
+    },
+    {
+      "hash": "0xe9a4134f162866685b7a66a6aea8ee8ba206f0b052b778516cda43a4f345dac0",
+      "block": 298,
+      "status": 1,
+      "gasUsed": "323051"
+    },
+    {
+      "hash": "0x35be399c22cb1ef8a3fa0022bd23136b6afbe5dd0441ad65816b79d0cc30a718",
+      "block": 297,
+      "status": 1,
+      "gasUsed": "45981"
+    },
+    {
+      "hash": "0x191671f3a51d74561a5ad5eeffe9754f9a9cec7a27b29f657291a6adb7de6440",
+      "block": 296,
+      "status": 1,
+      "gasUsed": "131169"
+    },
+    {
+      "hash": "0xa931fd16a23bf6d3fac7330080901cf03fc8bd37ad4b7b9e8413bb9639dbb07a",
+      "block": 293,
+      "status": 1,
+      "gasUsed": "102045"
+    },
+    {
+      "hash": "0xfb1c464390b7239733838370d485b308455704fbfbff8de8f4938e8cc3ba3dd1",
+      "block": 292,
+      "status": 1,
+      "gasUsed": "45111"
+    },
+    {
+      "hash": "0x9a6f18fb1c8f7460176b325c3a0a872c8a3f7b4d777b581a8706f4ebebb63150",
+      "block": 291,
+      "status": 1,
+      "gasUsed": "256181"
+    },
+    {
+      "hash": "0xc057fa123d34c6f8ecf4e74c717b07957d55fa32cb04114d4d06b890d7faa021",
+      "block": 290,
+      "status": 1,
+      "gasUsed": "79135"
+    },
+    {
+      "hash": "0x2ff9d1ab68d214cdd200fd57cb9e87cb4c9213c49d9f275e5d70ac239a2c1a32",
+      "block": 289,
+      "status": 1,
+      "gasUsed": "38579"
+    }
+  ],
+  "screenshots": [
+    "01-trade",
+    "02-positions",
+    "03-created-pool",
+    "04-arbitrage",
+    "05-records",
+    "06-mobile"
+  ]
+}

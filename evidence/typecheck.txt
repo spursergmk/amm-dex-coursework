@@ -1,0 +1,5 @@
+
+> minidex-contracts@0.1.0 typecheck
+> hardhat build && tsc --noEmit
+
+No contracts to compile
