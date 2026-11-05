@@ -1,35 +1,48 @@
 {
   "pages": 6,
+  "overflowPages": 0,
   "checks": [
     {
       "page": 1,
-      "textCharacters": 693,
-      "images": 0
+      "textCharacters": 643,
+      "images": 0,
+      "overflow": false,
+      "tableCount": 1
     },
     {
       "page": 2,
-      "textCharacters": 788,
-      "images": 0
+      "textCharacters": 714,
+      "images": 0,
+      "overflow": false,
+      "tableCount": 0
     },
     {
       "page": 3,
-      "textCharacters": 819,
-      "images": 0
+      "textCharacters": 747,
+      "images": 0,
+      "overflow": false,
+      "tableCount": 2
     },
     {
       "page": 4,
-      "textCharacters": 88,
-      "images": 1
+      "textCharacters": 84,
+      "images": 1,
+      "overflow": false,
+      "tableCount": 0
     },
     {
       "page": 5,
-      "textCharacters": 104,
-      "images": 1
+      "textCharacters": 100,
+      "images": 1,
+      "overflow": false,
+      "tableCount": 0
     },
     {
       "page": 6,
-      "textCharacters": 876,
-      "images": 0
+      "textCharacters": 765,
+      "images": 0,
+      "overflow": false,
+      "tableCount": 0
     }
   ]
 }

@@ -1,7 +1,7 @@
-import {chromium} from '@playwright/test';
 import {JsonRpcProvider, Contract, ContractFactory, parseEther} from 'ethers';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
+import {launchBrowser} from './launch.mjs';
 const config=JSON.parse(await fs.readFile('public/deployment.json','utf8'));
 if(config.chainId!==31337)throw Error('Browser integration test only supports the local chain.');
 const rpc=new JsonRpcProvider(config.rpcUrl),user=await rpc.getSigner(19),receiver=await rpc.getSigner(18);
@@ -9,7 +9,7 @@ const userAddress=await user.getAddress(),receiverAddress=await receiver.getAddr
 const a=new Contract(config.tokens[0].address,config.abi.token,user);
 const d1=new Contract(config.dexes[0].address,config.abi.dex,user),d2=new Contract(config.dexes[1].address,config.abi.dex,user);
 const checks=[],errors=[],setup=[];
-const browser=await chromium.launch({executablePath:chromium.executablePath(),headless:true});
+const {browser}=await launchBrowser({headless:true});
 const page=await browser.newPage({viewport:{width:1440,height:1080},deviceScaleFactor:1});
 page.on('pageerror',e=>errors.push(e.message));
 async function done(button,message){await page.locator(button).click();await page.waitForFunction(text=>document.querySelector('#notice').textContent===text,message,{timeout:45000});}

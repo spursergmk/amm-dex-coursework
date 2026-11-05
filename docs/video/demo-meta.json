@@ -1,0 +1,35 @@
+{
+  "video": "docs/video/amm-dex-demo.webm",
+  "bytes": 6701889,
+  "seconds": 86.6,
+  "viewport": "1280x720",
+  "browser": "bundled-chromium",
+  "user": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+  "localAccountIndex": 6,
+  "pageErrors": [],
+  "steps": [
+    {
+      "step": "faucet",
+      "at": 17105
+    },
+    {
+      "step": "swap",
+      "newTxs": 1
+    },
+    {
+      "step": "add"
+    },
+    {
+      "step": "positions"
+    },
+    {
+      "step": "price-impact"
+    },
+    {
+      "step": "arbitrage"
+    },
+    {
+      "step": "done"
+    }
+  ]
+}

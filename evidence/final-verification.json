@@ -10,11 +10,11 @@
     "10 browser flows passed with no page JavaScript errors"
   ],
   "chainId": 31337,
-  "checkedAt": "2026-11-04T06:44:15.834Z",
-  "block": 302,
+  "checkedAt": "2026-11-04T16:35:51.194Z",
+  "block": 310,
   "successfulReceipts": 300,
   "failedArbitrage": {
-    "hash": "0xe9cbcb9fdefbaaf749679c65640a9c2168a163018e2287a48f46acf32549b99a",
+    "hash": "0x648b9a0fd457dc6543bf38d14b95b3389ae4eab4151d71be77ff53587703165c",
     "status": 0,
     "events": 0
   },
@@ -22,8 +22,8 @@
     {
       "dex": "River DEX",
       "pool": 1,
-      "totalShares": "2405290079898712479618",
-      "activeNFTShares": "2405290079898712478618"
+      "totalShares": "2423043310087802292038",
+      "activeNFTShares": "2423043310087802291038"
     },
     {
       "dex": "River DEX",

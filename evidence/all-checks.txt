@@ -17,23 +17,23 @@ Running Mocha tests
 
 
   AMM / NFT / atomic arbitrage
-    ✔ faucet is per-user and rejects claims during cooldown (68ms)
-    ✔ rejects duplicate/reversed, identical and non-contract token pairs
-    ✔ mints metadata-bearing NFT and permanently locks initial minimum shares
-    ✔ uses reserve ratio and transfers only optimal deposit amounts
-    ✔ swap matches fee formula, increases k and exactly matches token reserves
-    ✔ reverse swap is priced from reversed reserves
-    ✔ slippage and deadlines revert without changing reserves
-    ✔ cannot redeem another owner's NFT; transfer passes redemption rights
-    ✔ fees raise geometric reserve value per share and redemption includes accrued reserves
-    ✔ withdrawal min amounts protect LP from intervening price changes
-    ✔ one transaction executes both legs and pays exact profit to caller
-    ✔ unprofitable second leg rolls back first leg, transfers, allowances and events
-    ✔ rejects fake profit targets and same-pool routes
-    ✔ separate pools sharing a token preserve per-pool accounting
+    √ faucet is per-user and rejects claims during cooldown (86ms)
+    √ rejects duplicate/reversed, identical and non-contract token pairs
+    √ mints metadata-bearing NFT and permanently locks initial minimum shares
+    √ uses reserve ratio and transfers only optimal deposit amounts
+    √ swap matches fee formula, increases k and exactly matches token reserves
+    √ reverse swap is priced from reversed reserves
+    √ slippage and deadlines revert without changing reserves
+    √ cannot redeem another owner's NFT; transfer passes redemption rights
+    √ fees raise geometric reserve value per share and redemption includes accrued reserves
+    √ withdrawal min amounts protect LP from intervening price changes
+    √ one transaction executes both legs and pays exact profit to caller
+    √ unprofitable second leg rolls back first leg, transfers, allowances and events
+    √ rejects fake profit targets and same-pool routes
+    √ separate pools sharing a token preserve per-pool accounting
 
 
-  14 passing (136ms)
+  14 passing (179ms)
 
 
 
@@ -49,4 +49,4 @@ dist/index.html                   5.72 kB │ gzip:   2.68 kB
 dist/assets/index-DvszCYua.css    4.82 kB │ gzip:   1.70 kB
 dist/assets/index-ZtRxqlOD.js   273.14 kB │ gzip: 101.63 kB
 
-✓ built in 177ms
+✓ built in 151ms

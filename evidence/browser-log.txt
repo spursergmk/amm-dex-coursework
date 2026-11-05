@@ -1,8 +1,4 @@
 
-> dual-pool-amm-coursework@1.0.0 test:e2e
-> npm run test:e2e --prefix web
-
-
 > amm-dex-web@1.0.0 test:e2e
 > node tests/browser.mjs
 
@@ -20,6 +16,97 @@
     "展示20账户模拟、储备变化、套利收据和失败回滚",
     "390px移动端无页面横向溢出"
   ],
-  "transactions": 10,
-  "pageErrors": []
+  "pageErrors": [],
+  "network": "Local Hardhat",
+  "chainId": 31337,
+  "setup": [
+    {
+      "action": "deploy browser test ERC20 C",
+      "hash": "0x2d60abd4db0dc0fcc2475c577d29796fe25dfbbb7a4ab2fb32d126465ed86349",
+      "address": "0xCf69D3f1B5b7824ABB377BA1f0421B325Ff8b471"
+    },
+    {
+      "action": "faucet C for browser user",
+      "hash": "0x062aa675624f7f0fcbb792c831e675cf4fb4b7cccd32aedd90f56208df7fe202"
+    },
+    {
+      "action": "approve price-impact trade",
+      "hash": "0x66abebce572900a8750a92852729e14069ff61ff7535d62a6c1eef8433181bbf"
+    },
+    {
+      "action": "price-impact trade for browser arbitrage",
+      "hash": "0x6bbbe2729a6103a3070a236f7a696bbe9896a9c2927414c7fc2000451335bfff",
+      "amountIn": "300 TKA"
+    }
+  ],
+  "transactions": [
+    {
+      "hash": "0x3201b72dcc1ffca6067036da71b85aa99efbd28b5126ce0bc7a7942eab53f67d",
+      "block": 310,
+      "status": 1,
+      "gasUsed": "222048"
+    },
+    {
+      "hash": "0xc7e09ce614de925f370f16ab9009f65b436a332506aa7642b6421f812e104388",
+      "block": 309,
+      "status": 1,
+      "gasUsed": "45981"
+    },
+    {
+      "hash": "0xf2d0c66bd3580a09588c4a20f3fd5655e6da0bb0d09a1e2c440bd177b3ccf724",
+      "block": 306,
+      "status": 1,
+      "gasUsed": "323051"
+    },
+    {
+      "hash": "0x35be399c22cb1ef8a3fa0022bd23136b6afbe5dd0441ad65816b79d0cc30a718",
+      "block": 305,
+      "status": 1,
+      "gasUsed": "45981"
+    },
+    {
+      "hash": "0x191671f3a51d74561a5ad5eeffe9754f9a9cec7a27b29f657291a6adb7de6440",
+      "block": 304,
+      "status": 1,
+      "gasUsed": "131169"
+    },
+    {
+      "hash": "0xf474a1ddf3ab5796fffdde64bee5964e3b000600802f3926b806c162871b05ec",
+      "block": 301,
+      "status": 1,
+      "gasUsed": "102055"
+    },
+    {
+      "hash": "0xff144228e207845749d6bca31741abc07bed92217adb3e15a381e1ed455ba0bc",
+      "block": 300,
+      "status": 1,
+      "gasUsed": "45111"
+    },
+    {
+      "hash": "0x48aedbaa693c20195658d7bdeb9665dd176c1e95cf1faebf51d291c468c4c40d",
+      "block": 299,
+      "status": 1,
+      "gasUsed": "256181"
+    },
+    {
+      "hash": "0x658ef9ed9e50aef66e196bf4c540e3f28ba945771a3a80e024f4fe837b82939f",
+      "block": 298,
+      "status": 1,
+      "gasUsed": "79135"
+    },
+    {
+      "hash": "0x2ff9d1ab68d214cdd200fd57cb9e87cb4c9213c49d9f275e5d70ac239a2c1a32",
+      "block": 297,
+      "status": 1,
+      "gasUsed": "38579"
+    }
+  ],
+  "screenshots": [
+    "01-trade",
+    "02-positions",
+    "03-created-pool",
+    "04-arbitrage",
+    "05-records",
+    "06-mobile"
+  ]
 }

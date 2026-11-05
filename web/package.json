@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": { "dev": "vite --host 127.0.0.1 --port 5173 --strictPort", "build": "vite build", "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort", "test:e2e": "node tests/browser.mjs", "report": "node scripts/report.mjs" },
+  "scripts": { "dev": "vite --host 127.0.0.1 --port 5173 --strictPort", "build": "vite build", "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort", "test:e2e": "node tests/browser.mjs", "demo": "node tests/demo.mjs", "report": "node scripts/report.mjs" },
   "dependencies": { "ethers": "6.17.0" },
   "devDependencies": { "vite": "8.3.4", "@playwright/test": "1.61.1" }
 }

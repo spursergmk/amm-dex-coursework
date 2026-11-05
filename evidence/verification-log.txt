@@ -1,49 +1,6 @@
 
-> dual-pool-amm-coursework@1.0.0 verify
-> npm run verify --prefix contracts
-
-
 > minidex-contracts@0.1.0 verify
 > node scripts/verify.mjs
 
 {
   "passed": 7,
-  "checks": [
-    "20 unique accounts each performed both swap and deposit",
-    "all deployment, simulation and browser transaction receipts exist and succeeded",
-    "failed arbitrage has mined status 0 and no surviving events; captured states are equal",
-    "one arbitrage receipt contains two swaps and exactly the reported profit",
-    "all pools: token balances equal summed reserves and NFT shares plus locked minimum equal total shares",
-    "deployed contract runtime bytecode exactly matches compiled artifacts",
-    "10 browser flows passed with no page JavaScript errors"
-  ],
-  "chainId": 31337,
-  "checkedAt": "2026-11-04T06:44:15.834Z",
-  "block": 302,
-  "successfulReceipts": 300,
-  "failedArbitrage": {
-    "hash": "0xe9cbcb9fdefbaaf749679c65640a9c2168a163018e2287a48f46acf32549b99a",
-    "status": 0,
-    "events": 0
-  },
-  "pools": [
-    {
-      "dex": "River DEX",
-      "pool": 1,
-      "totalShares": "2405290079898712479618",
-      "activeNFTShares": "2405290079898712478618"
-    },
-    {
-      "dex": "River DEX",
-      "pool": 2,
-      "totalShares": "10000000000000000000",
-      "activeNFTShares": "9999999999999999000"
-    },
-    {
-      "dex": "Hill DEX",
-      "pool": 1,
-      "totalShares": "2325829978279329382810",
-      "activeNFTShares": "2325829978279329381810"
-    }
-  ]
-}

@@ -10,21 +10,21 @@ import * as Contracts from "./index.js";
 
 declare module "@nomicfoundation/hardhat-ethers/types" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
-  getContractFactory(name: 'AtomicArbitrage', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.AtomicArbitrage__factory>
+  getContractFactory(name: 'TestToken', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.TestToken__factory>
+getContractFactory(name: 'AtomicArbitrage', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.AtomicArbitrage__factory>
 getContractFactory(name: 'MiniDEX', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.MiniDEX__factory>
-getContractFactory(name: 'TestToken', signerOrOptions?: ethers.Signer | FactoryOptions): Promise<Contracts.TestToken__factory>
 
-  getContractAt(name: 'AtomicArbitrage', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.AtomicArbitrage>
+  getContractAt(name: 'TestToken', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.TestToken>
+getContractAt(name: 'AtomicArbitrage', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.AtomicArbitrage>
 getContractAt(name: 'MiniDEX', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.MiniDEX>
-getContractAt(name: 'TestToken', address: string | ethers.Addressable, signer?: ethers.Signer): Promise<Contracts.TestToken>
 
-  deployContract(name: 'AtomicArbitrage', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.AtomicArbitrage>
+  deployContract(name: 'TestToken', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.TestToken>
+deployContract(name: 'AtomicArbitrage', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.AtomicArbitrage>
 deployContract(name: 'MiniDEX', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MiniDEX>
-deployContract(name: 'TestToken', signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.TestToken>
 
-  deployContract(name: 'AtomicArbitrage', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.AtomicArbitrage>
+  deployContract(name: 'TestToken', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.TestToken>
+deployContract(name: 'AtomicArbitrage', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.AtomicArbitrage>
 deployContract(name: 'MiniDEX', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.MiniDEX>
-deployContract(name: 'TestToken', args: any[], signerOrOptions?: ethers.Signer | DeployContractOptions): Promise<Contracts.TestToken>
 
     // default types
     getContractFactory(

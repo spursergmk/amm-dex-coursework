@@ -5,6 +5,6 @@ export type { AtomicArbitrage } from './AtomicArbitrage.js';
 export type { MiniDEX } from './MiniDEX.js';
 export type { TestToken } from './TestToken.js';
 export * as factories from './factories/index.js';
+export { TestToken__factory } from './factories/TestToken__factory.js';
 export { AtomicArbitrage__factory } from './factories/AtomicArbitrage__factory.js';
 export { MiniDEX__factory } from './factories/MiniDEX__factory.js';
-export { TestToken__factory } from './factories/TestToken__factory.js';

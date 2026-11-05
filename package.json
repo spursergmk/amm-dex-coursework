@@ -11,6 +11,7 @@
     "dev": "npm run dev --prefix web",
     "test": "npm run typecheck --prefix contracts && npm test --prefix contracts && npm run build --prefix web",
     "test:e2e": "npm run test:e2e --prefix web",
+    "demo": "npm run demo --prefix web",
     "verify": "npm run verify --prefix contracts",
     "deploy:sepolia": "npm run deploy:sepolia --prefix contracts"
   },

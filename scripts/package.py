@@ -21,12 +21,14 @@ for current, dirs, names in os.walk(root):
             raise RuntimeError(f'Unexpected symlink: {path}')
         files.append(path)
 files.sort()
-checksums = {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
+# as_posix() keeps the manifest and the archive entries separator-independent, so the
+# script behaves the same on Windows and macOS.
+checksums = {p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
 manifest = root / 'SHA256SUMS.txt'
 manifest.write_text(''.join(f'{digest}  {name}\n' for name, digest in checksums.items()), encoding='utf-8')
 with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as output:
     for path in files + [manifest]:
-        output.write(path, 'amm-dex/' + str(path.relative_to(root)))
+        output.write(path, 'amm-dex/' + path.relative_to(root).as_posix())
 with zipfile.ZipFile(archive) as check:
     assert check.testzip() is None
     for name, digest in checksums.items():

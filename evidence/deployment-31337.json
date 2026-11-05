@@ -4,7 +4,7 @@
   "rpcUrl": "http://127.0.0.1:8545",
   "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
   "blockNumber": 1,
-  "createdAt": "2026-11-04T06:43:35.920Z",
+  "createdAt": "2026-11-04T16:32:17.300Z",
   "tokens": [
     {
       "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
@@ -1595,7 +1595,7 @@
     },
     {
       "label": "seed A/B liquidity",
-      "hash": "0x635b743ddb4d8714d26cd6a9d00c14c1057b370fd480b6ec531fb72574d9a701",
+      "hash": "0xf91bf75fccf81baed500a98f1e9f341c9be0c06170dd8f9d0ea43627f3c8c4c4",
       "block": 11,
       "status": 1
     },
@@ -1619,7 +1619,7 @@
     },
     {
       "label": "seed A/B liquidity",
-      "hash": "0x1365768142a90aa1c60cc4e4c55867c7c9c7e926130a6c30a3f06f918a307d5f",
+      "hash": "0xe753da66489383822f75674ffd4b985595ea7495f4442b6f35e07f90721bea58",
       "block": 15,
       "status": 1
     }
